@@ -1,0 +1,134 @@
+/* Color Palette
+color.black: #25282a 
+color.green: #C5E86C
+color.grey: #454839 */
+
+.websiteFrameBottom {
+    position: fixed;
+    height: 1px;
+    background-color: #454839;
+    width: calc(100vw - 80px);
+    left: 40px;
+    bottom: 40px;
+}
+
+.websiteFrameTop {
+    position: fixed;
+    height: 1px;
+    background-color: #454839;
+    width: calc(100vw - 80px);
+    left: 40px;
+    top: 80px;
+}
+
+.websiteFrameLeft {
+    position: fixed;
+    border-left: 1px solid #454839;
+    height: calc(100vh - 120px);
+    left: 40px;
+    top: 80px; 
+}
+
+.websiteFrameRight {
+    position: fixed;
+    border-right: 1px solid #454839;
+    height: calc(100vh - 120px);
+    right: 40px;
+    top: 80px; 
+}
+
+.websiteFramePic {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+.imagesStyle {
+
+}
+.textHeader {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    position: fixed;
+    right: 10vh;
+    top: 0px; 
+}
+
+.banner {
+    padding: 50vh;
+    text-align: center;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 40px;
+}
+
+.chapter1 {
+    padding: 50vh;
+    text-align: left;
+    font-family: 'Fira Mono', monospace;
+    font-size: 25px;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    width: calc(100vw - 80px);
+    /* Here comes the magic */
+    display: grid;
+    /* grid-template-columns: 200px, 200px, 200px;*/
+    grid-gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5,150px);
+    }
+
+  .container div {
+    border: 1px solid var(--black);
+    }
+
+    
+body {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Mono', monospace;
+}
+
+h2 {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    text-align: center;
+    margin-top: 350px;
+    margin-bottom: 350px;
+    font-size: 60px;
+}
+
+nav {
+    position: fixed;
+    left: 30px;
+    top: 80px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+ul li {
+    padding: 3px;
+}
+ul li a {
+    text-decoration: none;
+    color: #25282a;
+}
+
+a:hover {
+    color: #C5E86C;
+}
+a:active {
+    color: #454839;
+
+}
+img:hover {
+    filter: alpha(opacity=40);
+    opacity: .3;
+}
+
+
